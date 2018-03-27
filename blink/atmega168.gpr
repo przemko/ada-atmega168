@@ -1,6 +1,6 @@
-project Blink extends "avr_app" is
+project ATmega168 extends "avr_app" is
 
         for Main use ("main.adb");
 
-end Blink;
+end ATmega168;
 
