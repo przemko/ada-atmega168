@@ -4,14 +4,20 @@ Programy w języku Ada na mikrokontroler ATmega168.
 
 1. kompilacja
 
-  $ cd NameOfExample
-  $ make
+```bash
+cd NameOfExample
+make
+```
 
 2. wysłanie do urządzenia
 
-  $ make flash
+```bash
+make flash
+```
 
 3. sprzątanie
 
-  $ make clean
+```bash
+make clean
+```
 
