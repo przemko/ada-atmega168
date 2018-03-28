@@ -7,7 +7,7 @@ FUSES      = -U hfuse:w:0xd9:m -U lfuse:w:0x24:m
 AVRDUDE = avrdude $(PROGRAMMER) -p $(DEVICE)
 
 
-all: compile dump flash
+all: compile dump
 
 compile: main.elf
 
