@@ -2,11 +2,11 @@
 
 with AVR; use AVR;
 with AVR.MCU;
-with AVR.Real_Time.Delays; pragma Unrefered (AVR.Real_Time.Delays);
+with AVR.Real_Time.Delays; pragma Unreferenced (AVR.Real_Time.Delays);
 
 procedure Main is
 
-   LED : Boolean renames MCU.PortB_Bits (0);
+   LED : Boolean renames MCU.PORTB_Bits (0);
 
 begin
    MCU.CLKPR := 16#80#; -- pozwala przez 4 cykle wpisac dzielnik
@@ -16,7 +16,7 @@ begin
 
    loop
       LED := High;
-      delay 0.1; 
+      delay 0.1;
       LED := Low;
       delay 0.1;
    end loop;
